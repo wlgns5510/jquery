@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<button id="btn" type="button">js테스트 버튼</button>
+		<h3 id="display">이름출력영역</h3>
+	</div>
+
+</body>
+<script type="text/javascript">
+
+$("#btn").on("click", function(){
+	$("#display").css("color", "red");
+	$("#display").text("홍길동");
+});
+
+//h3태그를 클릭했을때
+$("#display").on("click", function(){
+	console.log("h3 클릭");
+});
+</script>
+
+
+</html>
+
